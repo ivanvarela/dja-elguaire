@@ -1,0 +1,22 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="text-center home">
+    <div class="w-100 m-auto" style="max-width: 400px;">
+        <h1 class="h1 my-3 font-weight-normal">La Polla - ElGuaire</h1>
+        <p class="lead">Bienvenido al sistema de apuestas</p>
+
+        <div class="d-grid gap-2">
+            <a href="{% url 'login' %}" class="btn btn-lg btn-success">Ingresar</a>
+            <a href="{% url 'register' %}" class="btn btn-lg btn-primary">Registrarse</a>
+        </div>
+
+        <div class="mt-4">
+            <p class="text-muted">
+                Sistema desarrollado con Django<br>
+                Migrado desde PHP - Todos los datos preservados
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

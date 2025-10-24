@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container-fluid px-0">
+        <div class="container">
+            <div class="row flex-center min-vh-25 py-3">
+                <div class="col-sm-10 col-md-8 col-lg-5 col-xl-5 col-xxl-3"><a
+                        class="d-flex flex-center text-decoration-none mb-4" href="{% url 'login' %}">
+                    <div class="d-flex align-items-center fw-bolder fs-5 d-inline-block"><img
+                            src="{% static 'assets/img/icons/mm.svg' %}" alt="Medios Masivos" width="200px"/>
+                    </div>
+                </a>
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="text-center mb-7">
+                            <h3 class="text-1000">Ingrese</h3>
+                            <p class="text-700">Usuarios Registrados</p>
+                        </div>
+
+                        <div class="position-relative">
+                            <hr class="bg-200 mt-5 mb-4"/>
+                            <div class="divider-content-center">Complete sus datos</div>
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label class="form-label" for="username">Correo electrónico</label>
+                            <div class="form-icon-container">
+                                <input class="form-control form-icon-input" id="id_username" type="email"
+                                       name="username"
+                                       placeholder="correo electrónico"/><span
+                                    class="fas fa-user text-900 fs--1 form-icon"></span>
+                            </div>
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label class="form-label" for="password">Password</label>
+                            <div class="form-icon-container">
+                                <input class="form-control form-icon-input" id="password" type="password"
+                                       name="password"
+                                       placeholder="Password"/><span class="fas fa-key text-900 fs--1 form-icon"></span>
+                            </div>
+                        </div>
+                        <div class="row flex-between-center mb-7">
+
+                            <div class="col-auto"><a class="fs--1 fw-semi-bold"
+                                                     href="{% url 'reset_password' %}">
+                                Recuperar Contraseña
+                            </a></div>
+                        </div>
+                        <button class="btn btn-success w-100 mb-3" type="submit">Ingresar</button>
+                        <div class="text-center"><a class="fs--1 fw-bold"
+                                                    href="{% url 'register' %}">Crear un nuevo registro</a></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
