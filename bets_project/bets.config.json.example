@@ -1,0 +1,12 @@
+{
+  "SECRET_KEY": "django-insecure-CHANGE-THIS-IN-PRODUCTION-use-manage-py-to-generate",
+  "SENDGRID_API_KEY": "SG.your-sendgrid-api-key-here",
+  "DB_HOST": "localhost",
+  "DB_NAME": "elguaire_lapolla",
+  "DB_USER": "web-user-tennis",
+  "DB_PASS": "your-database-password",
+  "DB_PORT": "3306",
+  "FROM_EMAIL": "noreply@elguaire.com",
+  "SITE_URL": "https://bets.elguaire.com",
+  "SITE_NAME": "La Polla - ElGuaire"
+}

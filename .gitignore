@@ -17,6 +17,12 @@ ENV/
 
 # Environment variables
 .env
+.env.local
+
+# Configuration files (JSON and settings)
+bets_project/bets.config.json
+/etc/bets.config.json
+bets_project/settings.py
 
 # IDE
 .vscode/
@@ -58,5 +64,3 @@ htmlcov/
 
 # Migrations (keep initial, ignore others - OPTIONAL)
 # */migrations/[0-9]*.py
-.env
-.env.local
