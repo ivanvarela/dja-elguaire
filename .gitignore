@@ -58,3 +58,5 @@ htmlcov/
 
 # Migrations (keep initial, ignore others - OPTIONAL)
 # */migrations/[0-9]*.py
+.env
+.env.local
